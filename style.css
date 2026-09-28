@@ -1,0 +1,215 @@
+body{
+margin: 0;
+}
+#homepage_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(213, 199, 190, 1);
+    padding: 24px 70px;
+    min-width: 0px;
+    box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.65);
+}
+#logo_nav_alingment_div{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+#home-page-logo-header{
+    font-family: 'cinzel',serif;
+    font-size: 12px;
+}
+.navbar_links_home_page{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(55, 17, 3);
+    font-weight: 500px;
+}
+#booknow_link_homepage{
+    border: 2px solid #143d2a;
+    font-size: 16px;
+    padding: 15px 39px;
+    background-color: #143d2a;
+    text-decoration: none;
+    color: white;
+    font-family: 'work sans', sans-serif;
+}
+ #hero_section_homepage{
+    padding: 50px;
+} 
+#background_image_for_the_hero_section{
+    position: fixed;
+    z-index: -50;
+    height: 100%;
+    width: 100%;
+}
+#hero_section_homepage{
+    background-color: rgb(0,0,0,0.65);
+}
+#div_for_5stars_and_para{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-top: 105px;
+    
+}
+#id_for_herosection_5star{
+    height: 25px;
+    width: 75px;
+}
+#id_for_herosection_5000{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+#for2ndh2inherosection{
+    text-transform: uppercase;
+    color: white;
+    font-size: 58px;
+    font-weight: bolder;
+    font-family: 'cinzel',serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+}
+#id_for_herosection_divider_white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#id_for_herosection_divider_white_image{
+    height: 100px;
+    width: 500px;
+    position: relative;
+    top: -25px;
+}
+#for_tagline_hero_section{
+    font-size: 18px;
+    color: white;
+    font-family: 'work sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+}
+#booknow_link_hero_section_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -55px;
+}
+#booknow_link_hero_section{
+    border: 2px solid #143d2a;
+    font-size: 16px;
+    padding: 15px 75px;
+    background-color: #143d2a;
+    text-decoration: none;
+    color: white;
+    font-family: 'work sans', sans-serif;
+}
+#id_for_aboutus_section{
+    background-color: rgb(213, 199, 190, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 90px 90px 45px;
+
+}
+#heading_for_about_us_section{
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    margin-top: 85px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.para_for_about_us_homepage{
+    color: #143d2a;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    width: 60%;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+#learn_more_link_for_about_us_section_div{
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+}
+#learn_more_link_for_about_us_section{
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #143d2a;
+    font-family: 'work sans', sans-serif;
+}
+#id_for_aboutsection_trimmer_brush_image{
+    height: 587px;
+    width: 533px;
+    padding-right: 100px;
+}
+#id_for_gallery_section{
+    background-color: rgb(213, 199, 190, 1);
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom:  90px;
+}
+#heading_for_gallery_section{
+    color: rgb(55, 17, 3);
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#tagline_for_gallery_homepage{
+    color: rgb(55, 17, 3);
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500; 
+}
+#div_for_gallery_images_homepage{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    margin-top: 50px;
+    gap: 15px;
+    justify-content: center;
+}
+.images_for_gallery_homepage{
+    height: 250px;
+    width: 250px;
+}
+#explore_gallery_link_for_gallery_section_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#explore_gallery_link_for_gallery_section{
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #143d2a;
+    font-family: 'work sans', sans-serif;
+}
+#id_for_service_section{
+    background-color: rgb(213, 199, 190, 1);
+    padding: 90px;
+}
