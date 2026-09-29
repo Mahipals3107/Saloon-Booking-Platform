@@ -30,7 +30,7 @@ margin: 0;
     padding-right: 20px;
     text-decoration: none;
     color: rgb(55, 17, 3);
-    font-weight: 500px;
+    font-weight: 500;
 }
 #booknow_link_homepage{
     border: 2px solid #143d2a;
@@ -43,15 +43,14 @@ margin: 0;
 }
  #hero_section_homepage{
     padding: 50px;
+    background-color: rgb(0,0,0,0.65);
+
 } 
 #background_image_for_the_hero_section{
     position: fixed;
     z-index: -50;
     height: 100%;
     width: 100%;
-}
-#hero_section_homepage{
-    background-color: rgb(0,0,0,0.65);
 }
 #div_for_5stars_and_para{
     display: flex;
@@ -211,5 +210,174 @@ margin: 0;
 }
 #id_for_service_section{
     background-color: rgb(213, 199, 190, 1);
-    padding: 90px;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom:  90px;
+}
+#heading_for_service_section{
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#tagline_for_service_homepage{
+    color: #143d2a;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    
+}
+#div_for_service_section_3_kinds_of_services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 50px;
+}
+.single_section_div_for_services_homepage{
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(195.5, 195.5, 195.5, 0.5);
+    border-radius: 10px;
+    margin-top: 10px;
+    min-width: 0px;
+    letter-spacing: 1px;
+}
+.heading_for_servies_in_homepage{
+    text-align: center;
+    font-size: 20px;
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.descripiton_for_services_at_homepage_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.descripiton_for_services_at_homepage{
+    color: #143d2a;
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    width: 80%;
+}
+#explore_services_link_for_services_section_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#explore_services_link_for_services_section{
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: #143d2a;
+    font-family: 'work sans', sans-serif;
+}
+#footer_for_homepage{
+    background-color: #143d2a;
+    
+}
+#align_div_for_footer_for_homepage{
+    display: flex;
+    gap: 50px;
+    padding:75px 70px;
+}
+#align_div_for_footer_for_homepage > div{
+    flex: 1;
+}
+#heading_for_footer{
+    margin-top:0;
+    font-size: 40px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#second_tagline_for_footer_section{
+    margin-top:0;
+    font-size: 20px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    width: 60%;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+#descripiton_for_footer_at_homepage{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 500;
+    width: 60%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+}
+#footer_links_div_homepage{
+   display: grid;
+   grid-template-columns: max-content max-content max-content max-content;
+   gap: 40px;
+}
+.footer_links_homepage{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer_links_img_homepage{
+    height: 22.5px;
+    width: 22.5px;
+}
+#div_for_address_and_contacts_in_footer{
+    display:flex ;
+    gap: 50px;
+}
+#div_for_address_and_contacts_in_footer > div {
+    flex: 1;
+}
+.address_contact_heading_for_footer_section{
+    margin-top:0;
+    font-size: 20px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 25px;
+    padding-top: 95px;
+}
+.information_address_contact_para_homepage{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+#information_contact_para_email_homepage{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#copyright_for_footer_para{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
