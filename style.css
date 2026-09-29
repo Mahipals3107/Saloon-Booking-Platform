@@ -1,7 +1,12 @@
 body{
 margin: 0;
 }
-#homepage_navbar{
+
+/* NAVBAR AND FOOTER CSS FOR EACH SECTION */
+
+/* 1 NAVBAR:- */
+
+#navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,11 +25,11 @@ margin: 0;
     gap: 40px;
     align-items: center;
 }
-#home-page-logo-header{
+#logo-header{
     font-family: 'cinzel',serif;
     font-size: 12px;
 }
-.navbar_links_home_page{
+.navbar_links{
     font-family: 'work sans', sans-serif;
     font-size: 16px;
     padding-right: 20px;
@@ -32,7 +37,7 @@ margin: 0;
     color: rgb(55, 17, 3);
     font-weight: 500;
 }
-#booknow_link_homepage{
+#booknow_link{
     border: 2px solid #143d2a;
     font-size: 16px;
     padding: 15px 39px;
@@ -41,6 +46,115 @@ margin: 0;
     color: white;
     font-family: 'work sans', sans-serif;
 }
+
+/* 2 footer:- */
+
+#footer{
+    background-color: #143d2a;
+    
+}
+#align_div_for_footer{
+    display: flex;
+    gap: 50px;
+    padding:75px 70px;
+}
+#align_div_for_footer > div{
+    flex: 1;
+}
+#heading_for_footer{
+    margin-top:0;
+    font-size: 40px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#second_tagline_for_footer_section{
+    margin-top:0;
+    font-size: 20px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    width: 60%;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+#descripiton_for_footer{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 500;
+    width: 60%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+}
+#footer_links_div{
+   display: grid;
+   grid-template-columns: max-content max-content max-content max-content;
+   gap: 40px;
+}
+.footer_links{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer_links_img{
+    height: 22.5px;
+    width: 22.5px;
+}
+#div_for_address_and_contacts_in_footer{
+    display:flex ;
+    gap: 50px;
+}
+#div_for_address_and_contacts_in_footer > div {
+    flex: 1;
+}
+.address_contact_heading_for_footer_section{
+    margin-top:0;
+    font-size: 20px;
+    color: white;
+    font-family: 'cinzel',serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 25px;
+    padding-top: 95px;
+}
+.information_address_contact_para{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+#information_contact_para_email{
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#copyright_for_footer_para{
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+/* CSS FOR HOME PAGE */
+
+
  #hero_section_homepage{
     padding: 50px;
     background-color: rgb(0,0,0,0.65);
@@ -278,106 +392,4 @@ margin: 0;
     text-decoration: none;
     color: #143d2a;
     font-family: 'work sans', sans-serif;
-}
-#footer_for_homepage{
-    background-color: #143d2a;
-    
-}
-#align_div_for_footer_for_homepage{
-    display: flex;
-    gap: 50px;
-    padding:75px 70px;
-}
-#align_div_for_footer_for_homepage > div{
-    flex: 1;
-}
-#heading_for_footer{
-    margin-top:0;
-    font-size: 40px;
-    color: white;
-    font-family: 'cinzel',serif;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-#second_tagline_for_footer_section{
-    margin-top:0;
-    font-size: 20px;
-    color: white;
-    font-family: 'cinzel',serif;
-    text-transform: uppercase;
-    width: 60%;
-    margin-bottom: 10px;
-    line-height: 25px;
-}
-#descripiton_for_footer_at_homepage{
-    color: white;
-    font-family: 'work sans', sans-serif;
-    font-size: 18px;
-    text-align: start;
-    font-weight: 500;
-    width: 60%;
-    line-height: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 70px;
-}
-#footer_links_div_homepage{
-   display: grid;
-   grid-template-columns: max-content max-content max-content max-content;
-   gap: 40px;
-}
-.footer_links_homepage{
-    font-family: 'work sans', sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-.footer_links_img_homepage{
-    height: 22.5px;
-    width: 22.5px;
-}
-#div_for_address_and_contacts_in_footer{
-    display:flex ;
-    gap: 50px;
-}
-#div_for_address_and_contacts_in_footer > div {
-    flex: 1;
-}
-.address_contact_heading_for_footer_section{
-    margin-top:0;
-    font-size: 20px;
-    color: white;
-    font-family: 'cinzel',serif;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    line-height: 25px;
-    padding-top: 95px;
-}
-.information_address_contact_para_homepage{
-    color: white;
-    font-family: 'work sans', sans-serif;
-    font-size: 18px;
-    text-align: start;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
-}
-#information_contact_para_email_homepage{
-    font-family: 'work sans', sans-serif;
-    font-size: 16px;
-    padding-right: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-#copyright_for_footer_para{
-    color: white;
-    font-family: 'work sans', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    padding-bottom: 10px;
 }
