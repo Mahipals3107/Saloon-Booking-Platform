@@ -35,7 +35,6 @@ margin: 0;
     padding-right: 20px;
     text-decoration: none;
     color: rgb(55, 17, 3);
-    font-weight: 500;
 }
 #booknow_link{
     border: 2px solid #143d2a;
@@ -84,7 +83,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: start;
-    font-weight: 500;
     width: 60%;
     line-height: 20px;
     letter-spacing: 1px;
@@ -100,7 +98,6 @@ margin: 0;
     font-size: 16px;
     text-decoration: none;
     color: white;
-    font-weight: 500;
 }
 .footer_links_img{
     height: 22.5px;
@@ -128,7 +125,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: start;
-    font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
 }
@@ -138,14 +134,12 @@ margin: 0;
     padding-right: 20px;
     text-decoration: none;
     color: white;
-    font-weight: 500;
 }
 #copyright_for_footer_para{
     color: white;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -182,7 +176,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 16px;
     color: white;
-    font-weight: 500;
 }
 #for2ndh2inherosection{
     text-transform: uppercase;
@@ -296,7 +289,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    font-weight: 500; 
 }
 #div_for_gallery_images_homepage{
     display: grid;
@@ -342,7 +334,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    font-weight: 500;
     
 }
 #div_for_service_section_3_kinds_of_services{
@@ -377,7 +368,6 @@ margin: 0;
     font-family: 'work sans', sans-serif;
     font-size: 16px;
     text-align: center;
-    font-weight: 500;
     width: 80%;
 }
 #explore_services_link_for_services_section_div{
