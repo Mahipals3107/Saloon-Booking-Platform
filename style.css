@@ -1,5 +1,5 @@
 body{
-margin: 0;
+    margin: 0;
 }
 
 /* NAVBAR AND FOOTER CSS FOR EACH SECTION */
@@ -19,16 +19,19 @@ margin: 0;
     min-width: 0px;
     box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.65);
 }
+
 #logo_nav_alingment_div{
     display: flex;
     justify-content: space-between;
     gap: 40px;
     align-items: center;
 }
+
 #logo-header{
     font-family: 'cinzel',serif;
     font-size: 12px;
 }
+
 .navbar_links{
     font-family: 'work sans', sans-serif;
     font-size: 16px;
@@ -36,6 +39,7 @@ margin: 0;
     text-decoration: none;
     color: rgb(55, 17, 3);
 }
+
 #booknow_link{
     border: 2px solid #143d2a;
     font-size: 16px;
@@ -46,20 +50,23 @@ margin: 0;
     font-family: 'work sans', sans-serif;
 }
 
+
 /* (B) footer:- */
 
 #footer{
     background-color: #143d2a;
-    
 }
+
 #align_div_for_footer{
     display: flex;
     gap: 50px;
     padding:75px 70px;
 }
+
 #align_div_for_footer > div{
     flex: 1;
 }
+
 #heading_for_footer{
     margin-top:0;
     font-size: 40px;
@@ -68,6 +75,7 @@ margin: 0;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
 #second_tagline_for_footer_section{
     margin-top:0;
     font-size: 20px;
@@ -78,6 +86,7 @@ margin: 0;
     margin-bottom: 10px;
     line-height: 25px;
 }
+
 #descripiton_for_footer{
     color: white;
     font-family: 'work sans', sans-serif;
@@ -88,28 +97,34 @@ margin: 0;
     letter-spacing: 1px;
     margin-bottom: 70px;
 }
+
 #footer_links_div{
-   display: grid;
-   grid-template-columns: max-content max-content max-content max-content;
-   gap: 40px;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    gap: 40px;
 }
+
 .footer_links{
     font-family: 'work sans', sans-serif;
     font-size: 16px;
     text-decoration: none;
     color: white;
 }
+
 .footer_links_img{
     height: 22.5px;
     width: 22.5px;
 }
+
 #div_for_address_and_contacts_in_footer{
     display:flex ;
     gap: 50px;
 }
+
 #div_for_address_and_contacts_in_footer > div {
     flex: 1;
 }
+
 .address_contact_heading_for_footer_section{
     margin-top:0;
     font-size: 20px;
@@ -120,6 +135,7 @@ margin: 0;
     line-height: 25px;
     padding-top: 95px;
 }
+
 .information_address_contact_para{
     color: white;
     font-family: 'work sans', sans-serif;
@@ -128,6 +144,7 @@ margin: 0;
     line-height: 20px;
     letter-spacing: 1px;
 }
+
 #information_contact_para_email{
     font-family: 'work sans', sans-serif;
     font-size: 16px;
@@ -135,6 +152,7 @@ margin: 0;
     text-decoration: none;
     color: white;
 }
+
 #copyright_for_footer_para{
     color: white;
     font-family: 'work sans', sans-serif;
@@ -146,37 +164,41 @@ margin: 0;
     padding-bottom: 10px;
 }
 
-/*  1 CSS FOR HOME PAGE */
+
+/* 1 CSS FOR HOME PAGE */
 
 
- #hero_section_homepage{
+#hero_section_homepage{
     padding: 50px;
     background-color: rgb(0,0,0,0.65);
+}
 
-} 
 #background_image_for_the_hero_section{
     position: fixed;
     z-index: -50;
     height: 100%;
     width: 100%;
 }
+
 #div_for_5stars_and_para{
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     padding-top: 105px;
-    
 }
+
 #id_for_herosection_5star{
     height: 25px;
     width: 75px;
 }
+
 #id_for_herosection_5000{
     font-family: 'work sans', sans-serif;
     font-size: 16px;
     color: white;
 }
+
 #for2ndh2inherosection{
     text-transform: uppercase;
     color: white;
@@ -188,17 +210,20 @@ margin: 0;
     text-align: center;
     margin: 10px 0;
 }
+
 #id_for_herosection_divider_white{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #id_for_herosection_divider_white_image{
     height: 100px;
     width: 500px;
     position: relative;
     top: -25px;
 }
+
 #for_tagline_hero_section{
     font-size: 18px;
     color: white;
@@ -209,6 +234,7 @@ margin: 0;
     position: relative;
     top: -70px;
 }
+
 #booknow_link_hero_section_div{
     display: flex;
     justify-content: center;
@@ -216,6 +242,7 @@ margin: 0;
     position: relative;
     top: -55px;
 }
+
 #booknow_link_hero_section{
     border: 2px solid #143d2a;
     font-size: 16px;
@@ -225,13 +252,14 @@ margin: 0;
     color: white;
     font-family: 'work sans', sans-serif;
 }
+
 #id_for_aboutus_section{
     background-color: rgb(213, 199, 190, 1);
     display: flex;
     justify-content: space-between;
     padding: 90px 90px 90px 45px;
-
 }
+
 #heading_for_about_us_section{
     color: #143d2a;
     font-family: 'cinzel',serif;
@@ -240,6 +268,7 @@ margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 .para_for_about_us_homepage{
     color: #143d2a;
     font-size: 18px;
@@ -250,11 +279,13 @@ margin: 0;
     letter-spacing: 2px;
     margin-bottom: 22px;
 }
+
 #learn_more_link_for_about_us_section_div{
     display: flex;
     justify-content: start;
     margin-top: 50px;
 }
+
 #learn_more_link_for_about_us_section{
     border: 1px solid black;
     font-size: 16px;
@@ -263,18 +294,21 @@ margin: 0;
     color: #143d2a;
     font-family: 'work sans', sans-serif;
 }
+
 #id_for_aboutsection_trimmer_brush_image{
     height: 587px;
     width: 533px;
     padding-right: 100px;
 }
+
 #id_for_gallery_section{
     background-color: rgb(213, 199, 190, 1);
     padding-top: 20px;
     padding-left: 90px;
     padding-right: 90px;
-    padding-bottom:  90px;
+    padding-bottom: 90px;
 }
+
 #heading_for_gallery_section{
     color: rgb(55, 17, 3);
     font-family: 'cinzel',serif;
@@ -284,12 +318,14 @@ margin: 0;
     margin-bottom: 0;
     margin-top: 0;
 }
+
 #tagline_for_gallery_homepage{
     color: rgb(55, 17, 3);
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: center;
 }
+
 #div_for_gallery_images_homepage{
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -297,15 +333,18 @@ margin: 0;
     gap: 15px;
     justify-content: center;
 }
+
 .images_for_gallery_homepage{
     height: 250px;
     width: 250px;
 }
+
 #explore_gallery_link_for_gallery_section_div{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
+
 #explore_gallery_link_for_gallery_section{
     border: 1px solid black;
     font-size: 16px;
@@ -314,13 +353,15 @@ margin: 0;
     color: #143d2a;
     font-family: 'work sans', sans-serif;
 }
+
 #id_for_service_section{
     background-color: rgb(213, 199, 190, 1);
     padding-top: 20px;
     padding-left: 90px;
     padding-right: 90px;
-    padding-bottom:  90px;
+    padding-bottom: 90px;
 }
+
 #heading_for_service_section{
     color: #143d2a;
     font-family: 'cinzel',serif;
@@ -329,19 +370,21 @@ margin: 0;
     text-align: center;
     margin-bottom: 10px;
 }
+
 #tagline_for_service_homepage{
     color: #143d2a;
     font-family: 'work sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    
 }
+
 #div_for_service_section_3_kinds_of_services{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     margin-top: 50px;
 }
+
 .single_section_div_for_services_homepage{
     border: 1px solid black;
     box-shadow: 0px 0px 10px 0px rgba(195.5, 195.5, 195.5, 0.5);
@@ -350,6 +393,7 @@ margin: 0;
     min-width: 0px;
     letter-spacing: 1px;
 }
+
 .heading_for_servies_in_homepage{
     text-align: center;
     font-size: 20px;
@@ -358,11 +402,13 @@ margin: 0;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
+
 .descripiton_for_services_at_homepage_div{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .descripiton_for_services_at_homepage{
     color: #143d2a;
     font-family: 'work sans', sans-serif;
@@ -370,11 +416,13 @@ margin: 0;
     text-align: center;
     width: 80%;
 }
+
 #explore_services_link_for_services_section_div{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
+
 #explore_services_link_for_services_section{
     border: 1px solid black;
     font-size: 16px;
@@ -384,6 +432,7 @@ margin: 0;
     font-family: 'work sans', sans-serif;
 }
 
+
 /* 2 CSS FOR ABOUT PAGE :- */
 
 #info_section_for_about_us{
@@ -392,6 +441,7 @@ margin: 0;
     justify-content: space-between;
     padding: 55px 100px;
 }
+
 #heading_for_about_us_page{
     color: rgb(55, 17, 3);
     font-family: 'cinzel',serif;
@@ -399,6 +449,7 @@ margin: 0;
     margin: 25px 0;
     text-transform: uppercase;
 }
+
 .para_for_about_us_page{
     color: rgb(55, 17, 3);
     font-size: 18px;
@@ -408,24 +459,29 @@ margin: 0;
     line-height: 20px;
     letter-spacing: 2px;
 }
+
 #id_for_about_section_img{
     height: 385px;
     width: 429px;
 }
+
 #founder_section_for_about_us{
     background-color: rgb(213, 199, 190, 1);
     display: flex;
     justify-content: space-between;
     padding: 55px 100px;
 }
+
 #id_for_founder_section_img{
     height: 462px;
     width: 411px;
 }
+
 #div_for_founder_heading_and_para{
-    margin-left: auto   ;
+    margin-left: auto;
     transform: translateX(300px);
 }
+
 #heading_for_founder_section{
     color: #143d2a;
     font-family: 'cinzel',serif;
@@ -433,6 +489,7 @@ margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 #tagline_for_founder_section{
     color: #143d2a;
     font-size: 18px;
@@ -443,6 +500,7 @@ margin: 0;
     letter-spacing: 2px;
     font-weight: bold;
 }
+
 .para_for_founder_section{
     color: #143d2a;
     font-size: 18px;
@@ -453,15 +511,18 @@ margin: 0;
     letter-spacing: 2px;
     margin-bottom: 22px;
 }
+
 #section_for_review_page_aboutus{
     display: flex;
     justify-content: space-between;
-     background-color: rgb(213, 199, 190, 1);
-     padding: 55px 100px;
+    background-color: rgb(213, 199, 190, 1);
+    padding: 55px 100px;
 }
+
 #div_for_reviews__headings_aboutuspage{
     margin-right: 200px;
 }
+
 .headings_of_review_section_aboutuspage{
     color: #143d2a;
     font-family: 'cinzel',serif;
@@ -469,11 +530,13 @@ margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 #div_for_600_and_2_review{
     display: flex;
     justify-content: start;
     gap: 100px;
 }
+
 .para_for_about_us_page_reviews_section_headings{
     color: #143d2a;
     font-size: 18px;
@@ -483,15 +546,18 @@ margin: 0;
     letter-spacing: 2px;
     margin-bottom: 75px;
 }
+
 #img_for_review_about_us_page{
-    height:111px ;
+    height:111px;
     width: 286px;
 }
+
 .div_for_name_and_stars{
     display: flex;
     justify-content: start;
     gap: 70px;
 }
+
 .names_of_reviwers_about_us_page{
     color: #143d2a;
     font-family: 'cinzel',serif;
@@ -499,12 +565,14 @@ margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 .images_of_green_star{
     height: 21px;
     width: 125px;
     align-self: center;
     transform: translateY(20px);
 }
+
 .para_for_review_aboutuspage{
     color: #143d2a;
     font-size: 18px;
@@ -514,8 +582,9 @@ margin: 0;
     letter-spacing: 2px;
     width: 90%;
 }
+
 .divider_line_for_reviews{
-    height:75px ;
+    height:75px;
     width: 690px;
     position: relative;
     top: -15px;
@@ -523,7 +592,7 @@ margin: 0;
 }
 
 
-/* 3  CSS FOR GALLERY PAGE :- */
+/* 3 CSS FOR GALLERY PAGE :- */
 
 #info_section_for_gallery{
     background-color: rgb(213, 199, 190, 1);
@@ -531,6 +600,7 @@ margin: 0;
     justify-content: space-between;
     padding: 55px 100px;
 }
+
 #heading_for_gallery_page{
     color: rgb(55, 17, 3);
     font-family: 'cinzel',serif;
@@ -538,6 +608,7 @@ margin: 0;
     margin: 25px 0;
     text-transform: uppercase;
 }
+
 .para_for_gallery_page{
     color: rgb(55, 17, 3);
     font-size: 18px;
@@ -547,10 +618,12 @@ margin: 0;
     line-height: 20px;
     letter-spacing: 2px;
 }
+
 #id_for_gallery_section_img{
     height: 385px;
     width: 429px;
 }
+
 #div_for_gallery_images_page{
     display: grid;
     grid-template-columns: max-content max-content max-content;
@@ -559,10 +632,12 @@ margin: 0;
     gap: 20px;
     justify-content: center;
 }
+
 .images_for_gallery_page{
     height: 382.4px;
     width: 382.4px;
 }
+
 
 /* 4 CSS FOR SERVICES PAGE:- */
 
@@ -572,6 +647,7 @@ margin: 0;
     justify-content: space-between;
     padding: 55px 100px;
 }
+
 #heading_for_services_page{
     color: rgb(55, 17, 3);
     font-family: 'cinzel',serif;
@@ -579,6 +655,7 @@ margin: 0;
     margin: 25px 0;
     text-transform: uppercase;
 }
+
 .para_for_services_page{
     color: rgb(55, 17, 3);
     font-size: 18px;
@@ -588,10 +665,12 @@ margin: 0;
     line-height: 20px;
     letter-spacing: 2px;
 }
+
 #id_for_services_section_img{
     height: 385px;
     width: 429px;
 }
+
 #div_for_all_the_services{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -600,6 +679,7 @@ margin: 0;
     gap: 20px;
     justify-content: center;
 }
+
 .div_for_each_service{
     border: 1px solid black;
     box-shadow: 0px 0px 10px 0px rgba(195.5, 195.5, 195.5, 0.5);
@@ -608,6 +688,7 @@ margin: 0;
     min-width: 0px;
     letter-spacing: 1px;
 }
+
 .heading_of_each_srvice{
     text-align: center;
     font-size: 20px;
@@ -617,6 +698,7 @@ margin: 0;
     padding:50px 25px;
 }
 
+
 /* 5 CSS FOR CONTACT PAGE:- */
 
 #section_for_contact_page_divider{
@@ -625,6 +707,7 @@ margin: 0;
     justify-content: start;
     padding: 55px 200px;
 }
+
 #heading_in_the_contact_page{
     color:rgb(55, 17, 3);
     font-family: 'cinzel',serif;
@@ -632,6 +715,7 @@ margin: 0;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 #tagline_for_contact_page{
     color:rgb(55, 17, 3);
     font-size: 18px;
@@ -640,6 +724,7 @@ margin: 0;
     line-height: 20px;
     letter-spacing: 2px;
 }
+
 .phone_and_mail_heading_contact_page{
     color: rgb(55, 17, 3);
     font-size: 18px;
@@ -649,6 +734,7 @@ margin: 0;
     letter-spacing: 1px;
     text-transform: capitalize;
 }
+
 #phone_number_contact_page{
     color: rgb(55, 17, 3);
     font-size: 16px;
@@ -658,6 +744,7 @@ margin: 0;
     letter-spacing: 1px;
     text-transform: capitalize;
 }
+
 #email_for_contact_page{
     color: rgb(55, 17, 3);
     font-size: 16px;
@@ -667,49 +754,62 @@ margin: 0;
     letter-spacing: 1px;
     text-decoration: none;
 }
+
 #div_for_email_contact_page{
     margin-bottom: 30px;
 }
-#div_with_info_on_contact_page{
-       width: 30%;
 
+#div_with_info_on_contact_page{
+    width: 30%;
 }
+
 #form_on_the_contact_page{
     margin: 15px auto;
-padding: 10px 20px;
-border: 2px solid rgb(213, 199, 190, 1);
-width: clamp(237px, 31vw, 400px);
-background-color: rgb(213, 199, 190, 1);
+    padding: 10px 20px;
+    border: 2px solid rgb(213, 199, 190, 1);
+    width: clamp(237px, 31vw, 400px);
+    background-color: rgb(213, 199, 190, 1);
 }
+
 #project1_contact_me_form{
-        display: grid;
+    display: grid;
 }
-#name, #email, #mobile_number, #message{
-border: 2px solid black;
-width: 600px;
-font-size: clamp(8px, 2vw, 14px);
-margin-bottom: 27px;
-padding: 16px;
-border: 1px solid rgb(55, 17, 3);
+
+#name,
+#email,
+#mobile_number,
+#message{
+    border: 2px solid black;
+    width: 600px;
+    font-size: clamp(8px, 2vw, 14px);
+    margin-bottom: 27px;
+    padding: 16px;
+    border: 1px solid rgb(55, 17, 3);
 }
+
 .formcontents{
-     color:rgb(55, 17, 3);
+    color:rgb(55, 17, 3);
     font-family: 'cinzel',serif;
     font-size: 15px;
     text-transform: uppercase;
 }
+
 #message{
     resize:none;
     height: 75px;
 }
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
     font-size: 75px;
     font-family: 'cinzel',serif;
     text-transform: uppercase;
     color:rgb(55, 17, 3);
-    
 }
-#submit_button{
+
+#submit_button_contact{
     border: 2px solid #143d2a;
     font-size: 16px;
     padding: 15px 75px;
@@ -718,10 +818,147 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     color: white;
     font-family: 'work sans', sans-serif;
 }
+
 #section_for_map{
     padding: 55px 200px;
     background-color: rgb(213, 199, 190, 1);
 }
+
 #map_for_contact_page{
-     width: 100%;
+    width: 100%;
+}
+
+
+/* 6 CSS FOR BOOKING PAGE:- */
+
+
+/* =========================
+   BOOKING PAGE
+   ========================= */
+
+#section_for_booking_page{
+    background-color: rgb(213, 199, 190, 1);
+    padding: 55px;
+}
+
+#heading_for_booking_page{
+    color: #143d2a;
+    font-family: 'cinzel', serif;
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#divider_for_booking_page_heading_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    top: -75px;
+}
+
+#divider_for_booking_page_heading{
+    width: 700px;
+    height: auto;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+#form_on_the_booking_page{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#project1_booking_form{
+    display: grid;
+    gap: 30px;
+}
+
+
+/* Each row contains two fields */
+
+.align_div_for_booking{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+/* Individual field */
+
+.booking_field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Labels */
+
+.booking_field label,
+.booking_message_field label{
+    color: #371103;
+    font-family: 'work sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* Inputs and select */
+
+#name_booking,
+#email_booking,
+#mobile_number_booking,
+#date_booking,
+#time_booking,
+#servicetype_booking{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(55, 17, 3);
+    padding: 16px;
+    font-size: 16px;
+    background-color: white;
+}
+
+
+/* Message */
+
+.booking_message_field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#message_booking{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(55, 17, 3);
+    padding: 16px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+
+/* Submit button */
+
+#submit_button_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#submit_button{
+    border: 2px solid #143d2a;
+    background-color: #143d2a;
+    color: white;
+    font-family: 'work sans', sans-serif;
+    font-size: 16px;
+    padding: 14px 60px;
+    cursor: pointer;
 }

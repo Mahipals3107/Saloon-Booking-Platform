@@ -24,68 +24,134 @@
             <a id="booknow_link" href="booking.html">Book Now</a>
         </div>
     </nav>
-    <section>
+    <section id="section_for_booking_page">
         <div>
-        <h2>BOOK YOUR APPOINTMENT TODAY</h2>
+        <h1 id="heading_for_booking_page">BOOK YOUR APPOINTMENT TODAY</h1>
         </div>
-        <div>
-            <img src="" alt="image of a straight line">
+        <div id="divider_for_booking_page_heading_div">
+            <img id="divider_for_booking_page_heading" src="divider-green.png" alt="image of a straight line">
         </div>
-        <div>
-            <form>
-                <div>
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required> 
+       <div id="form_on_the_booking_page">
+
+            <form id="project1_booking_form">
+                <div class="align_div_for_booking">
+                    <div class="booking_field">
+                        <label for="name_booking">Name</label>
+                        <input
+                            type="text"
+                            id="name_booking"
+                            name="name"
+                            required
+                        >
                     </div>
-                    <div>
-                        <label for="mobile_number">Mobile.No</label>
-                        <input type="tel" id="mobile_number" name="mobile_number" required>
+
+                    <div class="booking_field">
+                        <label for="mobile_number_booking">Mobile No.</label>
+                        <input
+                            type="tel"
+                            id="mobile_number_booking"
+                            name="mobile_number"
+                            required
+                        >
                     </div>
+
                 </div>
-                <div>
-                    <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+
+
+                <!-- Email + Service -->
+                <div class="align_div_for_booking">
+
+                    <div class="booking_field">
+                        <label for="email_booking">Email</label>
+                        <input
+                            type="email"
+                            id="email_booking"
+                            name="email"
+                            required
+                        >
                     </div>
-                    <div>
-                        <label for="servicetype">Select a service:</label>
-                        <select name="servicetype" id="servicetype" required>
-                           <option value="Hair Coloring">Hair Coloring</option>
-                           <option value="Beard Styling">Beard Styling</option>
-                           <option value="Facial & Skincare">Facial & Skincare</option>
-                           <option value="Hair Spa">Hair Spa</option>
-                           <option value="Haircut & Styling">Haircut & Styling</option>
-                           <option value="Head Massage">Head Massage</option>
-                           <option value="Beard Trim">Beard Trim</option>
-                           <option value="Shaving">Shaving</option>
-                           <option value="Manicure">Manicure</option>
-                           <option value="Pedicure">Pedicure</option>
-                           <option value="Hair Treatment">Hair Treatment</option>
-                           <option value="Party & Event Styling">Party & Event Styling</option>
+
+                    <div class="booking_field">
+                        <label for="servicetype_booking">
+                            Select a service
+                        </label>
+
+                        <select
+                            name="servicetype"
+                            id="servicetype_booking"
+                            required
+                        >
+                            <option value="Hair Coloring">Hair Coloring</option>
+                            <option value="Beard Styling">Beard Styling</option>
+                            <option value="Facial & Skincare">Facial & Skincare</option>
+                            <option value="Hair Spa">Hair Spa</option>
+                            <option value="Haircut & Styling">Haircut & Styling</option>
+                            <option value="Head Massage">Head Massage</option>
+                            <option value="Beard Trim">Beard Trim</option>
+                            <option value="Shaving">Shaving</option>
+                            <option value="Manicure">Manicure</option>
+                            <option value="Pedicure">Pedicure</option>
+                            <option value="Hair Treatment">Hair Treatment</option>
+                            <option value="Party & Event Styling">Party & Event Styling</option>
                         </select>
                     </div>
+
                 </div>
-                <div>
-                    <div>
-                        <label for="date">Date</label>
-                        <input type="date" id="date" name="date" required>
+
+
+                <!-- Date + Time -->
+                <div class="align_div_for_booking">
+
+                    <div class="booking_field">
+                        <label for="date_booking">Date</label>
+                        <input
+                            type="date"
+                            id="date_booking"
+                            name="date"
+                            required
+                        >
                     </div>
-                    <div>
-                        <label for="time">Time</label>
-                        <input type="time" id="time" name="time" required>
+
+                    <div class="booking_field">
+                        <label for="time_booking">Time</label>
+                        <input
+                            type="time"
+                            id="time_booking"
+                            name="time"
+                            required
+                        >
                     </div>
+
                 </div>
-                <div>
-                   <label for="message">Message</label>
-                   <textarea name="message" id="message"></textarea>
+
+
+                <!-- Message -->
+                <div class="booking_message_field">
+
+                    <label for="message_booking">Message</label>
+
+                    <textarea
+                        name="message"
+                        id="message_booking"
+                        rows="5"
+                    ></textarea>
+
                 </div>
-                <div>
-                   <input type="submit" id="submit_button" value="SUBMIT" > 
+
+
+                <!-- Submit -->
+                <div id="submit_button_div">
+                    <input
+                        type="submit"
+                        id="submit_button"
+                        value="SUBMIT"
+                    >
                 </div>
-            </div>
+
             </form>
+
         </div>
+
     </section>
     <footer id="footer" >
     <div id="align_div_for_footer">
