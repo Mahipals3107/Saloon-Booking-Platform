@@ -4,75 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style & Scissors | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div>
-        <header>
-            <h1>STYLE & SCISSORS</h1>
-        </header>
-            <div>
-            <a href="index.html">Home|</a>
-            <a href="about.html">About|</a>
-            <a href="gallery.html">Gallery|</a>
-            <a href="service.html">Services|</a>
-            <a href="contact.html">Contact</a>
+   <nav id="navbar">
+        <div id="logo_nav_alingment_div">
+           <header id="logo-header">
+             <h1>STYLE & SCISSORS</h1>
+           </header>
+           <div id="navbar_links_home_page_div">
+            <a class="navbar_links" href="index.html">Home</a>
+            <a class="navbar_links" href="about.html">About</a>
+            <a class="navbar_links" href="gallery.html">Gallery</a>
+            <a class="navbar_links" href="service.html">Services</a>
+            <a class="navbar_links" href="contact.html">Contact</a>
             </div>
         </div>
-        <div>
-            <a href="booking.html">Book Now</a>
+        <div id="booknow_link_navbar">
+            <a id="booknow_link" href="booking.html">Book Now</a>
         </div>
     </nav>
-    <section>
-        <div>
+    <section id="section_for_contact_page_divider">
+        <div id="div_with_info_on_contact_page">
             <div>
-                <h1>Lets get in touch </h1>
+                <h1 id="heading_in_the_contact_page">Let’s Get in Touch</h1>
             </div>
             <div>
-                <p>Have a question? We're here to help.</p>
-            </div>
-            <div>
-                <div>
-                    <h4>Phone</h4>
-                </div>
-                <div>
-                    <p>+91 7568003553</p>
-                </div>
+                <p id="tagline_for_contact_page">Have a question? We're here to help.</p>
             </div>
             <div>
                 <div>
-                    <h4>Email</h4>
+                    <h3 class="phone_and_mail_heading_contact_page">Phone</h3>
                 </div>
                 <div>
-                    <p><a href="mailto:hello@styleandscissors.in">hello@styleandscissors.in</a></p>
+                    <p id="phone_number_contact_page">+91 7568003553</p>
                 </div>
             </div>
             <div>
                 <div>
-                    <a href=""><img src="" alt="image of Instagram"></a>
+                    <h3 class="phone_and_mail_heading_contact_page">Email</h3>
+                </div>
+                <div id="div_for_email_contact_page">
+                    <p><a id="email_for_contact_page" href="mailto:hello@styleandscissors.in">hello@styleandscissors.in</a></p>
+                </div>
+            </div>
+            <div id="footer_links_div">
+                <div>
+                    <a href="@instagram.com"><img class="footer_links_img" src="insta_logo.jpg" alt="image of Instagram"></a>
                 </div>
                 <div>
-                    <a href=""><img src="" alt="image of facebook"></a>
+                    <a href="@facebook.com"><img class="footer_links_img" src="facebook_img.png" alt="image of facebook"></a>
                 </div>
             </div>
         </div>
-        <div>
-            <form>
+        <div id="form_on_the_contact_page">
+            <form id="project1_contact_me_form">
                 <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label class="formcontents" for="name">Name*</label>
+                    <input type="text" id="name" name="name" placeholder="NAME" required>
                 </div>
                 <div>
-                   <label for="email">Email:</label>
-                   <input type="email" id="email" name="email" required>
+                   <label class="formcontents" for="email">Email*</label>
+                   <input type="email" id="email" name="email" placeholder="EMAIL" required>
                 </div>
                 <div>
-                   <label for="mobile_number">Mobile no:</label>
-                   <input type="tel" id="mobile_number" name="mobile_number" required>
+                   <label class="formcontents" for="mobile_number">Mobile no*</label>
+                   <input type="tel" id="mobile_number" name="mobile_number" placeholder="MOBILE NUMBER" required>
                 </div>
                 <div>
-                   <label for="message">Message</label>
-                   <textarea name="message" id="message"></textarea>
+                   <label class="formcontents" for="message">Message*</label>
+                   <textarea name="message" id="message" placeholder="ENTER YOUR MESSAGE"></textarea>
                 </div>
                 <div>
                    <input type="submit" id="submit_button" value="SUBMIT" > 
@@ -80,44 +81,51 @@
             </form>
         </div>
     </section>
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.4810029880399!2d75.79404438672613!3d26.905906612670403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4106966efe5%3A0x9764a836fec9aa8c!2sStyle%20'n'%20Scissors!5e0!3m2!1sen!2sin!4v1790408116604!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">frameborder="0">Location</iframe>
+    <section id="section_for_map">
+        <iframe id="map_for_contact_page" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.4810029880399!2d75.79404438672613!3d26.905906612670403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4106966efe5%3A0x9764a836fec9aa8c!2sStyle%20'n'%20Scissors!5e0!3m2!1sen!2sin!4v1790408116604!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">frameborder="0">Location</iframe>
     </section>
-    <footer>
+    <footer id="footer" >
+    <div id="align_div_for_footer">
         <div>
            <div>
-            <h3>STYLE & SCISSORS</h3>
+            <h3 id="heading_for_footer">STYLE & SCISSORS</h3>
            </div>
            <div>
-            <p>At Style & Scissors, we believe great style is more than just a look. Our professional team is here to help you feel confident, refreshed, and ready to shine.</p>
+            <h4 id="second_tagline_for_footer_section">where craftsmanship meets character.</h4>
            </div>
            <div>
-            <a href=""><img src="" alt="facebook"></a>
-            <a href=""><img src="" alt="Instagram"></a>
-            <a href=""><img src="" alt="X"></a>
-            <a href=""><img src="" alt="Youtube"></a>
+            <p id="descripiton_for_footer">At Style & Scissors, we believe great style is more than just haircuts, we deliver a tailored grooming experience that celebrates tradition with a modern edge. Whether you're here for a quick trim or a full refresh, you'll leave feeling sharp, confident, and completely yourself.</p>
+           </div>
+           <div id="footer_links_div">
+            <a class="footer_links" href=""><img class="footer_links_img" src="facebook_img.png" alt="facebook"></a>
+            <a class="footer_links" href=""><img class="footer_links_img" src="insta_logo.jpg" alt="Instagram"></a>
+            <a class="footer_links" href=""><img class="footer_links_img" src="logo for twitter.png" alt="X"></a>
+            <a class="footer_links" href=""><img class="footer_links_img" src="youtube logo.png" alt="Youtube"></a>
            </div>
         </div>
-        <div>
+        <div id="div_for_address_and_contacts_in_footer">
             <div>
-                <h3>Address</h3>
+                <div >
+                   <h4 class="address_contact_heading_for_footer_section">Address</h4>
+                </div>
+                <div>
+                   <p class="information_address_contact_para">123, C-Scheme, Near Central Park, Jaipur, Rajasthan, 302001, India</p>
+                </div>
             </div>
             <div>
-                <p>123, C-Scheme, Near Central Park, Jaipur, Rajasthan, 302001, India</p>
+                <div>
+                   <h4 class="address_contact_heading_for_footer_section">Contacts</h4>
+                </div>
+                <div>
+                <p class="information_address_contact_para">+91 98765 43210</p>
+                <p><a id="information_contact_para_email" href="mailto:hello@styleandscissors.in">hello@styleandscissors.in</a></p>
+                </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h3>Contacts</h3>
-            </div>
-            <div>
-                <p>+91 98765 43210</p>
-                <p><a href="mailto:hello@styleandscissors.in">hello@styleandscissors.in</a></p>
-            </div>
-        </div>
-        <div>
-            <p>© 2026 Style & Scissors. All Rights Reserved. | Designed with care.</p>
-        </div>
+    </div>
+    <div>
+        <p id="copyright_for_footer_para">© 2026 Style & Scissors. All Rights Reserved. | Designed with care.</p>
+    </div>
     </footer>
 </body>
 </html>
