@@ -4,7 +4,7 @@ margin: 0;
 
 /* NAVBAR AND FOOTER CSS FOR EACH SECTION */
 
-/* 1 NAVBAR:- */
+/* (A) NAVBAR:- */
 
 #navbar{
     display: flex;
@@ -47,7 +47,7 @@ margin: 0;
     font-family: 'work sans', sans-serif;
 }
 
-/* 2 footer:- */
+/* (B) footer:- */
 
 #footer{
     background-color: #143d2a;
@@ -152,7 +152,7 @@ margin: 0;
     padding-bottom: 10px;
 }
 
-/* CSS FOR HOME PAGE */
+/*  1 CSS FOR HOME PAGE */
 
 
  #hero_section_homepage{
@@ -392,4 +392,184 @@ margin: 0;
     text-decoration: none;
     color: #143d2a;
     font-family: 'work sans', sans-serif;
+}
+
+/* 2 CSS FOR ABOUT PAGE :- */
+
+#info_section_for_about_us{
+    background-color: rgb(213, 199, 190, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 100px;
+}
+#heading_for_about_us_page{
+    color: rgb(55, 17, 3);
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+.para_for_about_us_page{
+    color: rgb(55, 17, 3);
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    width: 80%;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+#id_for_about_section_img{
+    height: 385px;
+    width: 429px;
+}
+#founder_section_for_about_us{
+    background-color: rgb(213, 199, 190, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 100px;
+}
+#id_for_founder_section_img{
+    height: 462px;
+    width: 411px;
+}
+#div_for_founder_heading_and_para{
+    margin-left: auto   ;
+    transform: translateX(300px);
+}
+#heading_for_founder_section{
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#tagline_for_founder_section{
+    color: #143d2a;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    width: 60%;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.para_for_founder_section{
+    color: #143d2a;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    width: 60%;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+#section_for_review_page_aboutus{
+    display: flex;
+    justify-content: space-between;
+     background-color: rgb(213, 199, 190, 1);
+     padding: 55px 100px;
+}
+#div_for_reviews__headings_aboutuspage{
+    margin-right: 200px;
+}
+.headings_of_review_section_aboutuspage{
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#div_for_600_and_2_review{
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+}
+.para_for_about_us_page_reviews_section_headings{
+    color: #143d2a;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 75px;
+}
+#img_for_review_about_us_page{
+    height:111px ;
+    width: 286px;
+}
+.div_for_name_and_stars{
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+}
+.names_of_reviwers_about_us_page{
+    color: #143d2a;
+    font-family: 'cinzel',serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.images_of_green_star{
+    height: 21px;
+    width: 125px;
+    align-self: center;
+    transform: translateY(20px);
+}
+.para_for_review_aboutuspage{
+    color: #143d2a;
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    line-height: 20px;
+    letter-spacing: 2px;
+    width: 90%;
+}
+.divider_line_for_reviews{
+    height:75px ;
+    width: 690px;
+    position: relative;
+    top: -15px;
+    margin-bottom: -30px;
+}
+
+
+/* 3  CSS FOR GALLERY PAGE :- */
+
+#info_section_for_gallery{
+    background-color: rgb(213, 199, 190, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 100px;
+}
+#heading_for_gallery_page{
+    color: rgb(55, 17, 3);
+    font-family: 'cinzel',serif;
+    font-size: 55px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+.para_for_gallery_page{
+    color: rgb(55, 17, 3);
+    font-size: 18px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    width: 80%;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+#id_for_gallery_section_img{
+    height: 385px;
+    width: 429px;
+}
+#div_for_gallery_images_page{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    padding: 55px 100px;
+    background-color: rgb(213, 199, 190, 1);
+    gap: 20px;
+    justify-content: center;
+}
+.images_for_gallery_page{
+    height: 382.4px;
+    width: 382.4px;
 }
