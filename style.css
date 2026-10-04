@@ -1422,6 +1422,8 @@ textarea {
 #divider_for_booking_page_heading {
     width: min(700px, 90%);
     height: auto;
+    position: relative;
+    top: -50px;
 }
 
 
