@@ -4,52 +4,189 @@ body{
 
 /* NAVBAR AND FOOTER CSS FOR EACH SECTION */
 
-/* (A) NAVBAR:- */
+/* =========================
+   NAVBAR
+========================= */
 
-#navbar{
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
     z-index: 100;
+
     background-color: rgb(213, 199, 190, 1);
+
     padding: 24px 70px;
-    min-width: 0px;
-    box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.65);
+    min-width: 0;
+
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.65);
 }
 
-#logo_nav_alingment_div{
+
+/* =========================
+   LOGO
+========================= */
+
+#logo_nav_alingment_div {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     align-items: center;
+    gap: 40px;
 }
 
-#logo-header{
-    font-family: 'cinzel',serif;
+#logo-header {
+    font-family: 'cinzel', serif;
     font-size: 12px;
 }
 
-.navbar_links{
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+#navbar_links_home_page_div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_links {
     font-family: 'work sans', sans-serif;
     font-size: 16px;
+
     padding-right: 20px;
+
     text-decoration: none;
     color: rgb(55, 17, 3);
 }
 
-#booknow_link{
+
+/* =========================
+   BOOK NOW
+========================= */
+
+#booknow_link {
     border: 2px solid #143d2a;
+
     font-size: 16px;
+
     padding: 15px 39px;
+
     background-color: #143d2a;
+
     text-decoration: none;
     color: white;
+
     font-family: 'work sans', sans-serif;
 }
 
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+#mobile_menu {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    position: absolute;
+
+    top: 25%;
+    right: 0;
+
+    background-color: rgb(213, 199, 190, 1);
+
+    padding: 20px;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+#hamburger_button_div {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburger_button {
+    position: relative;
+
+    width: 30px;
+    height: 20px;
+
+    border: none;
+    padding: 0;
+
+    background-color: transparent;
+}
+
+#hamburger_button::before,
+#hamburger_button span,
+#hamburger_button::after {
+    position: absolute;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: #143d2a;
+}
+
+#hamburger_button::before {
+    content: "";
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -10px);
+}
+
+#hamburger_button span {
+    display: block;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#hamburger_button::after {
+    content: "";
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 7px);
+}
+
+
+/* =========================
+   MOBILE — 900px AND BELOW
+========================= */
+
+@media screen and (max-width: 900px) {
+
+    #navbar_links_home_page_div {
+        display: none;
+    }
+
+    #booknow_link_navbar {
+        display: none;
+    }
+
+    #hamburger_button_div {
+        display: flex;
+    }
+
+}
 
 /* (B) footer:- */
 
@@ -82,7 +219,7 @@ body{
     color: white;
     font-family: 'cinzel',serif;
     text-transform: uppercase;
-    width: 60%;
+    width: 80%;
     margin-bottom: 10px;
     line-height: 25px;
 }
@@ -90,9 +227,9 @@ body{
 #descripiton_for_footer{
     color: white;
     font-family: 'work sans', sans-serif;
-    font-size: 18px;
+    font-size: 18px ;
     text-align: start;
-    width: 60%;
+    width: 80%;
     line-height: 20px;
     letter-spacing: 1px;
     margin-bottom: 70px;
@@ -163,6 +300,66 @@ body{
     margin-bottom: 0;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width:1240px) {
+    #align_div_for_footer, #navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    #align_div_for_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    #second_tagline_for_footer_section,
+#descripiton_for_footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+    #div_for_social_media_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_links_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+@media screen and (max-width: 480px) {
+    #div_for_address_and_contacts_in_footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 0 40px;
+        gap: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .address_contact_heading_for_footer_section {
+        padding-top: 0;
+    }
+    .information_address_contact_para{
+        padding-bottom: 20px;
+    }
+}
+
 
 
 /* 1 CSS FOR HOME PAGE */
@@ -452,34 +649,34 @@ body{
 
 .para_for_about_us_page{
     color: rgb(55, 17, 3);
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
-    width: 80%;
+    width: 90%;
     line-height: 20px;
     letter-spacing: 2px;
 }
 
 #id_for_about_section_img{
-    height: 385px;
-    width: 429px;
+    height: clamp( 290px,38vw,385px);
+    width: clamp(345px,38vw,429px);
 }
 
 #founder_section_for_about_us{
     background-color: rgb(213, 199, 190, 1);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 55px 100px;
+    gap: 0;
 }
 
 #id_for_founder_section_img{
-    height: 462px;
-    width: 411px;
+    height: clamp( 290px,38vw,462px);
+    width: clamp(345px,38vw,411px);
 }
 
 #div_for_founder_heading_and_para{
     margin-left: auto;
-    transform: translateX(300px);
 }
 
 #heading_for_founder_section{
@@ -495,7 +692,6 @@ body{
     font-size: 18px;
     font-family: 'work sans', sans-serif;
     text-align: start;
-    width: 60%;
     line-height: 20px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -503,24 +699,23 @@ body{
 
 .para_for_founder_section{
     color: #143d2a;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
-    width: 60%;
     line-height: 20px;
     letter-spacing: 2px;
     margin-bottom: 22px;
 }
 
 #section_for_review_page_aboutus{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: rgb(213, 199, 190, 1);
     padding: 55px 100px;
 }
 
 #div_for_reviews__headings_aboutuspage{
-    margin-right: 200px;
+    margin-right: 75px;
 }
 
 .headings_of_review_section_aboutuspage{
@@ -550,6 +745,7 @@ body{
 #img_for_review_about_us_page{
     height:111px;
     width: 286px;
+    margin: 0 auto;
 }
 
 .div_for_name_and_stars{
@@ -561,7 +757,7 @@ body{
 .names_of_reviwers_about_us_page{
     color: #143d2a;
     font-family: 'cinzel',serif;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -575,7 +771,7 @@ body{
 
 .para_for_review_aboutuspage{
     color: #143d2a;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
     line-height: 20px;
@@ -585,10 +781,92 @@ body{
 
 .divider_line_for_reviews{
     height:75px;
-    width: 690px;
+    width:690px;
     position: relative;
     top: -15px;
     margin-bottom: -30px;
+}
+
+@media screen and (max-width:1240px) {
+    #section_for_review_page_aboutus, #founder_section_for_about_us, #info_section_for_about_us {
+        padding: 55px 10px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    #section_for_review_page_aboutus, #founder_section_for_about_us, #info_section_for_about_us {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 40px 40px;
+        gap: 0;
+
+    }
+
+    #founder_section_for_about_us{
+        #div_for_founder_image{
+            order: 2;
+        }
+        #div_for_founder_heading_and_para{
+            order: 1;
+        }
+    }
+
+
+    .para_for_founder_section,.para_for_about_us_page{
+       justify-content: center;
+       text-align: left;
+       padding-bottom: 5px;
+    }
+    #tagline_for_founder_section{
+        text-align: center;
+    }
+    #id_for_about_section_img,#id_for_founder_section_img {
+        padding-top: 30px;
+    }
+    
+    #div_for_600_and_2_review, .div_for_name_and_stars, .para_for_review_aboutuspage {
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .para_for_review_aboutuspage{
+        width: 80%;
+        padding-top: 20px;
+        
+    }
+
+    .divider_line_for_reviews{
+        width:  clamp(514px,20vw,690px);
+    }
+
+    #img_for_review_about_us_page {
+        margin: 0 auto;
+    }
+
+    #div_for_reviews__headings_aboutuspage {
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width:580px) {
+    #heading_for_about_us_page,#heading_for_founder_section, .headings_of_review_section_aboutuspage {
+        font-size: clamp(35px,8.5vw,55px);
+        margin: 0 auto;
+    }
+        .div_for_name_and_stars{
+            gap: 30px;
+        }
+        .divider_line_for_reviews{
+            width: clamp(320px,40vw,514px);
+        }
+
+        #img_for_review_about_us_page {
+        margin: 0 auto;
+    }
 }
 
 
@@ -611,7 +889,7 @@ body{
 
 .para_for_gallery_page{
     color: rgb(55, 17, 3);
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
     width: 80%;
@@ -620,8 +898,8 @@ body{
 }
 
 #id_for_gallery_section_img{
-    height: 385px;
-    width: 429px;
+    height: clamp( 290px,38vw,462px);
+    width: clamp(345px,38vw,411px);
 }
 
 #div_for_gallery_images_page{
@@ -629,15 +907,70 @@ body{
     grid-template-columns: max-content max-content max-content;
     padding: 55px 100px;
     background-color: rgb(213, 199, 190, 1);
-    gap: 20px;
+    gap:clamp(10px,1.5vw,20px);
     justify-content: center;
 }
 
 .images_for_gallery_page{
-    height: 382.4px;
-    width: 382.4px;
+    height: clamp(285px,30vw,382.4px);
+    width: clamp(285px,30vw,382.4px);
 }
 
+@media screen and (max-width:1240px) {
+    #info_section_for_gallery, #div_for_gallery_images_page {
+        padding: 55px auto;
+    }
+
+}
+
+    @media screen and (max-width:930px) {
+   #info_section_for_gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 40px 40px;
+        gap: 0;
+
+    }
+    .para_for_gallery_page{
+        justify-content: center;
+       text-align: justify;
+       padding-bottom: 10px;
+       margin: 0 auto;
+    }
+
+    #id_for_gallery_section_img {
+        padding-top: 75px;
+    }
+
+    .images_for_gallery_page{
+    height: clamp(150px,30vw,285px);
+    width: clamp(150px,30vw,285px);
+}
+}
+
+    @media screen and (max-width:580px) {
+        .images_for_gallery_page{
+    height: clamp(90px,30vw,150px);
+    width: clamp(90px,30vw,150px);
+    }
+        #div_for_gallery_images_page{
+            gap: 9px;
+        }
+        #heading_for_gallery_page {
+            font-size: clamp(45px,8.5vw,55px);
+        margin: 0 auto;
+        padding-bottom: 30px;
+        }
+
+        #id_for_gallery_section_img{
+           height: clamp( 250px,38vw,290px);
+            width: clamp(300px,38vw,345px);
+}
+}
 
 /* 4 CSS FOR SERVICES PAGE:- */
 
@@ -892,7 +1225,7 @@ textarea{
 
 /* Individual field */
 
-.booking_field{
+ .booking_field{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -941,8 +1274,8 @@ textarea{
     border: 1px solid rgb(55, 17, 3);
     padding: 16px;
     font-size: 16px;
-    resize: vertical;
-}
+    resize: none; 
+} 
 
 
 /* Submit button */
@@ -961,4 +1294,11 @@ textarea{
     font-size: 16px;
     padding: 14px 60px;
     cursor: pointer;
+} 
+
+@media screen and (max-width:1240px){
+    #section_for_booking_page{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
