@@ -422,7 +422,7 @@ body{
 }
 
 #for_tagline_hero_section{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     font-family: 'work sans', sans-serif;
     display: flex;
@@ -468,10 +468,10 @@ body{
 
 .para_for_about_us_homepage{
     color: #143d2a;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
-    width: 60%;
+    width: 80%;
     line-height: 20px;
     letter-spacing: 2px;
     margin-bottom: 22px;
@@ -493,9 +493,8 @@ body{
 }
 
 #id_for_aboutsection_trimmer_brush_image{
-    height: 587px;
-    width: 533px;
-    padding-right: 100px;
+    height: clamp( 290px,38vw,462px);
+    width: clamp(345px,38vw,411px);
 }
 
 #id_for_gallery_section{
@@ -525,15 +524,15 @@ body{
 
 #div_for_gallery_images_homepage{
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    margin-top: 50px;
-    gap: 15px;
+    grid-template-columns:max-content max-content max-content max-content;
     justify-content: center;
+    gap: 15px;
 }
 
 .images_for_gallery_homepage{
-    height: 250px;
-    width: 250px;
+    height: clamp(200px,20vw,250px);
+    width: clamp(200px,20vw,250px);
+    margin: 50px auto;
 }
 
 #explore_gallery_link_for_gallery_section_div{
@@ -628,6 +627,96 @@ body{
     color: #143d2a;
     font-family: 'work sans', sans-serif;
 }
+
+@media screen and (max-width:1240px) {
+    #hero_section_homepage, #id_for_aboutus_section, #id_for_gallery_section, #id_for_service_section {
+        padding: 20px 20px;
+    }
+}
+ @media screen and (max-width:930px) {
+   #id_for_aboutus_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 40px 40px;
+        gap: 0;
+
+    }
+    .para_for_about_us_homepage{
+        justify-content: center;
+       text-align: justify;
+       padding: 15px 0      ;
+       margin: 0 auto;
+    }
+
+    #id_for_aboutsection_trimmer_brush_image {
+        padding-top: 25px;
+    }
+
+    #learn_more_link_for_about_us_section_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    }
+
+    #div_for_gallery_images_homepage{
+    display: grid;
+    grid-template-columns:max-content max-content;
+    justify-content: center;
+    align-content: center;
+    gap: 0;
+    }
+
+    .images_for_gallery_homepage {
+        margin: 5px;
+    }
+
+    #learn_more_link_for_about_us_section_div {
+        margin-top: 25px;
+    }
+
+}
+@media screen and (max-width:650px) {
+    #div_for_service_section_3_kinds_of_services {
+        display: grid;
+    grid-template-columns: 1fr  ;
+    padding: 0px 50px;
+    background-color: rgb(213, 199, 190, 1);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0;
+    }
+ }
+
+ @media screen and (max-width:580px) {
+    #for2ndh2inherosection {
+        font-size: clamp(32px,8.5vw,58px);
+        margin: 0 auto;
+    }
+    #id_for_herosection_divider_white_image {
+        width: clamp(300px,40vw,500px)
+    }
+
+    #heading_for_gallery_section, #heading_for_about_us_section {
+        font-size: clamp(45px,8.5vw,55px);
+        margin: 0 auto;
+    }
+
+    #id_for_aboutsection_trimmer_brush_image{
+    height: clamp( 250px,38vw,290px);
+    width: clamp(300px,38vw,345px);
+    }
+
+    .images_for_gallery_homepage{
+    height: clamp(150px,20vw,200px);
+    width: clamp(150px,20vw,200px);
+    margin: 5px;
+}
+
+ } 
 
 
 /* 2 CSS FOR ABOUT PAGE :- */
@@ -781,7 +870,7 @@ body{
 
 .divider_line_for_reviews{
     height:75px;
-    width:690px;
+        width:  clamp(514px,20vw,690px);
     position: relative;
     top: -15px;
     margin-bottom: -30px;
@@ -789,7 +878,7 @@ body{
 
 @media screen and (max-width:1240px) {
     #section_for_review_page_aboutus, #founder_section_for_about_us, #info_section_for_about_us {
-        padding: 55px 10px;
+        padding: 55px 20px;
     }
 }
 
@@ -818,7 +907,7 @@ body{
 
     .para_for_founder_section,.para_for_about_us_page{
        justify-content: center;
-       text-align: left;
+       text-align: justify;
        padding-bottom: 5px;
     }
     #tagline_for_founder_section{
@@ -837,10 +926,6 @@ body{
         width: 80%;
         padding-top: 20px;
         
-    }
-
-    .divider_line_for_reviews{
-        width:  clamp(514px,20vw,690px);
     }
 
     #img_for_review_about_us_page {
@@ -918,7 +1003,7 @@ body{
 
 @media screen and (max-width:1240px) {
     #info_section_for_gallery, #div_for_gallery_images_page {
-        padding: 55px auto;
+        padding: 55px 20px;
     }
 
 }
@@ -991,7 +1076,7 @@ body{
 
 .para_for_services_page{
     color: rgb(55, 17, 3);
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'work sans', sans-serif;
     text-align: start;
     width: 80%;
@@ -1000,8 +1085,8 @@ body{
 }
 
 #id_for_services_section_img{
-    height: 385px;
-    width: 429px;
+    height: clamp( 290px,38vw,462px);
+    width: clamp(345px,38vw,411px);
 }
 
 #div_for_all_the_services{
@@ -1030,6 +1115,82 @@ body{
     text-transform: capitalize;
     padding:50px 25px;
 }
+
+@media screen and (max-width:1240px) {
+   #info_section_for_services_page, #div_for_all_the_services {
+        padding: 55px 20px;
+    }
+
+}
+
+ @media screen and (max-width:930px) {
+   #info_section_for_services_page {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 40px 40px;
+        gap: 0;
+
+    }
+    .para_for_services_page{
+        justify-content: center;
+       text-align: justify;
+       padding-bottom: 10px;
+       margin: 0 auto;
+    }
+
+    #id_for_services_section_img {
+        padding-top: 75px;
+    }
+
+    #div_for_all_the_services {
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 55px 50px;
+    background-color: rgb(213, 199, 190, 1);
+    gap: 20px;
+    justify-content: center;
+    }
+
+ }
+
+ @media screen and (max-width:750px) {
+    #div_for_all_the_services {
+        display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    padding: 55px 50px;
+    background-color: rgb(213, 199, 190, 1);
+    gap: 20px;
+    justify-content: center;
+    }
+ }
+
+  @media screen and (max-width:580px) {
+       #heading_for_services_page {
+            font-size: clamp(45px,8.5vw,55px);
+        margin: 0 auto;
+        padding-bottom: 30px;
+        }
+
+        #id_for_services_section_img {
+           height: clamp( 250px,38vw,290px);
+            width: clamp(300px,38vw,345px);
+}
+}
+
+@media screen and (max-width:500px) {
+    #div_for_all_the_services {
+        display: grid;
+    grid-template-columns: 1fr  ;
+    padding: 55px 50px;
+    background-color: rgb(213, 199, 190, 1);
+    gap: 20px;
+    justify-content: center;
+    }
+ }
 
 
 /* 5 CSS FOR CONTACT PAGE:- */
