@@ -1195,41 +1195,35 @@ body{
 
 /* 5 CSS FOR CONTACT PAGE:- */
 
-#section_for_contact_page_divider{
+#section_for_contact_page_divider {
     background-color: rgb(213, 199, 190, 1);
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 55px 200px;
+    gap: 100px;
 }
 
-#heading_in_the_contact_page{
-    color:rgb(55, 17, 3);
-    font-family: 'cinzel',serif;
-    font-size: 48px;
-    margin-bottom: 10px;
+#heading_in_the_contact_page {
+    color: rgb(55, 17, 3);
+    font-family: 'cinzel', serif;
+    font-size: 46px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-#tagline_for_contact_page{
-    color:rgb(55, 17, 3);
-    font-size: 18px;
+#tagline_for_contact_page {
+    color: rgb(55, 17, 3);
+    font-size: 17px;
     font-family: 'work sans', sans-serif;
     text-align: start;
     line-height: 20px;
     letter-spacing: 2px;
+    margin: 0 0 35px 0;
+
 }
 
-.phone_and_mail_heading_contact_page{
-    color: rgb(55, 17, 3);
-    font-size: 18px;
-    font-family: 'work sans', sans-serif;
-    text-align: start;
-    line-height: 20px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-}
-
-#phone_number_contact_page{
+.phone_and_mail_heading_contact_page {
     color: rgb(55, 17, 3);
     font-size: 16px;
     font-family: 'work sans', sans-serif;
@@ -1237,73 +1231,98 @@ body{
     line-height: 20px;
     letter-spacing: 1px;
     text-transform: capitalize;
+    margin: 0 0 12px 0;
+
 }
 
-#email_for_contact_page{
+#phone_number_contact_page {
     color: rgb(55, 17, 3);
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'work sans', sans-serif;
+    text-align: start;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+        margin: 0 0 35px 0;
+
+}
+
+#email_for_contact_page {
+    color: rgb(55, 17, 3);
+    font-size: 14px;
     font-family: 'work sans', sans-serif;
     text-align: start;
     line-height: 20px;
     letter-spacing: 1px;
     text-decoration: none;
+        margin: 0;
+
 }
 
-#div_for_email_contact_page{
-    margin-bottom: 30px;
+#div_for_email_contact_page {
+    margin: 0 0 30px 0;
 }
 
-#div_with_info_on_contact_page{
-    width: 30%;
+#footer_links_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
 }
 
-#form_on_the_contact_page{
+#div_with_info_on_contact_page {
+    width: 45%;
+}
+
+#form_on_the_contact_page {
     margin: 15px auto;
     padding: 10px 20px;
     border: 2px solid rgb(213, 199, 190, 1);
     width: clamp(237px, 31vw, 400px);
     background-color: rgb(213, 199, 190, 1);
+    box-sizing: border-box;
 }
 
-#project1_contact_me_form{
+#project1_contact_me_form {
     display: grid;
 }
 
 #name,
 #email,
 #mobile_number,
-#message{
-    border: 2px solid black;
-    width: 600px;
-    font-size: clamp(8px, 2vw, 14px);
+#message {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
     margin-bottom: 27px;
     padding: 16px;
     border: 1px solid rgb(55, 17, 3);
 }
 
-.formcontents{
-    color:rgb(55, 17, 3);
-    font-family: 'cinzel',serif;
+.formcontents {
+    color: rgb(55, 17, 3);
+    font-family: 'cinzel', serif;
     font-size: 15px;
     text-transform: uppercase;
 }
 
-#message{
-    resize:none;
+#message {
+    resize: none;
     height: 75px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-textarea{
-    font-size: 75px;
-    font-family: 'cinzel',serif;
+textarea {
+    font-size: 14px;
+    font-family: 'cinzel', serif;
     text-transform: uppercase;
-    color:rgb(55, 17, 3);
+    color: rgb(55, 17, 3);
 }
 
-#submit_button_contact{
+#submit_button_contact {
     border: 2px solid #143d2a;
     font-size: 16px;
     padding: 15px 75px;
@@ -1313,48 +1332,95 @@ textarea{
     font-family: 'work sans', sans-serif;
 }
 
-#section_for_map{
+#section_for_map {
     padding: 55px 200px;
     background-color: rgb(213, 199, 190, 1);
 }
 
-#map_for_contact_page{
+#map_for_contact_page {
     width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+
+    #section_for_contact_page_divider,
+    #section_for_map {
+        padding: 20px 20px;
+    }
+
+    #section_for_contact_page_divider {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: start;
+        gap: 40px;
+    }
+
+    #div_for_submit_contact_page{
+        display: flex;
+        justify-content: center;
+    }
+
+    #div_with_info_on_contact_page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #heading_in_the_contact_page,
+    #tagline_for_contact_page,
+    .phone_and_mail_heading_contact_page,
+    #phone_number_contact_page,
+    #email_for_contact_page {
+        text-align: center;
+    }
+
+    #div_for_email_contact_page {
+        text-align: center;
+    }
+
+    #form_on_the_contact_page {
+        width: clamp(237px, 80vw, 400px);
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:580px) {
+       #heading_in_the_contact_page {
+            font-size: clamp(27px,7.5vw,46px);
+            margin: 0 auto;
+       }
 }
 
 
 /* 6 CSS FOR BOOKING PAGE:- */
 
-
-/* =========================
-   BOOKING PAGE
-   ========================= */
-
-#section_for_booking_page{
+#section_for_booking_page {
     background-color: rgb(213, 199, 190, 1);
-    padding: 55px;
+    padding: 55px 100px;
 }
 
-#heading_for_booking_page{
+#heading_for_booking_page {
     color: #143d2a;
     font-family: 'cinzel', serif;
     font-size: 48px;
     margin: 0;
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap;
 }
 
-#divider_for_booking_page_heading_div{
+#divider_for_booking_page_heading_div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    position: relative;
-    top: -75px;
+    margin-top: 15px;
 }
 
-#divider_for_booking_page_heading{
-    width: 700px;
+#divider_for_booking_page_heading {
+    width: min(700px, 90%);
     height: auto;
 }
 
@@ -1363,13 +1429,14 @@ textarea{
    FORM
    ========================= */
 
-#form_on_the_booking_page{
+#form_on_the_booking_page {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 40px auto 0;
+    box-sizing: border-box;
 }
 
-#project1_booking_form{
+#project1_booking_form {
     display: grid;
     gap: 30px;
 }
@@ -1377,7 +1444,7 @@ textarea{
 
 /* Each row contains two fields */
 
-.align_div_for_booking{
+.align_div_for_booking {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -1386,7 +1453,7 @@ textarea{
 
 /* Individual field */
 
- .booking_field{
+.booking_field {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1396,7 +1463,7 @@ textarea{
 /* Labels */
 
 .booking_field label,
-.booking_message_field label{
+.booking_message_field label {
     color: #371103;
     font-family: 'work sans', sans-serif;
     font-size: 17px;
@@ -1411,7 +1478,7 @@ textarea{
 #mobile_number_booking,
 #date_booking,
 #time_booking,
-#servicetype_booking{
+#servicetype_booking {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid rgb(55, 17, 3);
@@ -1423,31 +1490,31 @@ textarea{
 
 /* Message */
 
-.booking_message_field{
+.booking_message_field {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#message_booking{
+#message_booking {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid rgb(55, 17, 3);
     padding: 16px;
     font-size: 16px;
-    resize: none; 
-} 
+    resize: none;
+}
 
 
 /* Submit button */
 
-#submit_button_div{
+#submit_button_div {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-#submit_button{
+#submit_button {
     border: 2px solid #143d2a;
     background-color: #143d2a;
     color: white;
@@ -1455,11 +1522,157 @@ textarea{
     font-size: 16px;
     padding: 14px 60px;
     cursor: pointer;
-} 
+}
 
-@media screen and (max-width:1240px){
-    #section_for_booking_page{
-        padding-left: 10px;
-        padding-right: 10px;
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media screen and (max-width: 1240px) {
+
+    #section_for_booking_page {
+        padding: 40px 20px;
+    }
+
+    #form_on_the_booking_page {
+        width: 95%;
+    }
+}
+
+
+/* =========================
+   HEADING RESPONSIVENESS
+   ========================= */
+
+@media screen and (max-width: 900px) {
+
+    #heading_for_booking_page {
+        font-size: clamp(20px, 5.3vw, 42px);
+    }
+
+    #divider_for_booking_page_heading_div {
+        margin-top: 10px;
+    }
+
+    #divider_for_booking_page_heading {
+        width: 90%;
+    }
+
+    #form_on_the_booking_page {
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    
+}
+@media screen and (max-width: 600px) {
+
+    .align_div_for_booking {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================
+   SMALL SCREENS
+   ========================= */
+
+@media screen and (max-width: 580px) {
+
+    #section_for_booking_page {
+        padding: 30px 20px;
+    }
+
+    #heading_for_booking_page {
+        font-size: clamp(18px, 6vw, 30px);
+        white-space: nowrap;
+    }
+
+    #divider_for_booking_page_heading_div {
+        margin-top: 8px;
+    }
+
+    #divider_for_booking_page_heading {
+        width: 95%;
+    }
+
+    #form_on_the_booking_page {
+        width: 100%;
+        max-width: none;
+        margin-top: 25px;
+    }
+
+    #project1_booking_form {
+        gap: 22px;
+    }
+
+    .booking_field,
+    .booking_message_field {
+        gap: 7px;
+    }
+
+    .booking_field label,
+    .booking_message_field label {
+        font-size: 15px;
+    }
+
+    #name_booking,
+    #email_booking,
+    #mobile_number_booking,
+    #date_booking,
+    #time_booking,
+    #servicetype_booking,
+    #message_booking {
+        width: 100%;
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    #submit_button {
+        width: 100%;
+        padding: 13px 20px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL SCREENS
+   ========================= */
+
+@media screen and (max-width: 345px) {
+
+    #section_for_booking_page {
+        padding: 25px 7px;
+    }
+
+    #heading_for_booking_page {
+        font-size: clamp(15px, 5.3vw, 18px);
+    }
+
+    #divider_for_booking_page_heading {
+        width: 100%;
+    }
+
+    #form_on_the_booking_page {
+        width: 100%;
+    }
+
+    #name_booking,
+    #email_booking,
+    #mobile_number_booking,
+    #date_booking,
+    #time_booking,
+    #servicetype_booking,
+    #message_booking {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    #submit_button {
+        font-size: 14px;
+        padding: 12px 15px;
     }
 }
